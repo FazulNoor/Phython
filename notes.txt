@@ -1,0 +1,10 @@
+https://api.us-east.speech-to-text.watson.cloud.ibm.com/instances/6bbda3b3-d572-45e1-8c54-22d6ed9e52c2
+
+f5sAznhrKQyvBFFaZbtF60m5tzLbqWhyALQawBg5TjRI
+
+
+curl -X POST -u "apikey:f5sAznhrKQyvBFFaZbtF60m5tzLbqWhyALQawBg5TjRI" "https://api.us-east.speech-to-text.watson.cloud.ibm.com/instances/6bbda3b3-d572-45e1-8c54-22d6ed9e52c2/v1/recognize"
+
+ 
+ 
+curl -X POST -u "apikey:f5sAznhrKQyvBFFaZbtF60m5tzLbqWhyALQawBg5TjRI" --header "Content-Type: audio/wav" --data-binary audio-file.flac "https://api.us-east.speech-to-text.watson.cloud.ibm.com/instances/6bbda3b3-d572-45e1-8c54-22d6ed9e52c2/v1/recognize"
