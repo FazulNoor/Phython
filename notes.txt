@@ -8,3 +8,5 @@ curl -X POST -u "apikey:QiI8P29bXrlsif3kLkFmIByvFzuVTIRtIkt4P2-WBzIl" \
 --header "Content-Type: audio/mp3" \
 --data-binary @Welcome.mp3 \
 "https://api.eu-gb.speech-to-text.watson.cloud.ibm.com/instances/17e65c76-0551-4a41-8602-3e674923757c/v1/recognize"
+
+jupyter notebook --NotebookApp.allow_origin=\'$(gp url 8888)\'
