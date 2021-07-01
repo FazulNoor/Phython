@@ -16,4 +16,6 @@ pipenv shell
 pipenv install -r requirement.txt
 python -m ipykernel install --user --name=Phython
 
+pipenv install pandas scipy scikit-learn jupyter ipykernel matplotlib xlrd
+
 jupyter notebook --NotebookApp.allow_origin=\'$(gp url 8888)\'
