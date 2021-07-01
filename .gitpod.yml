@@ -1,0 +1,13 @@
+image:
+  file: dockerfile
+tasks:
+  - init: git config core.hooksPath hooks
+  - init: find ./hooks -type f -exec chmod +x {} \;
+  - command: jupyter notebook --NotebookApp.allow_origin=\'$(gp url 8888)\'
+ports:
+  - port: 8888
+  - port: 38888
+    onOpen: open-browser
+github:
+  prebuilds:
+    master: true

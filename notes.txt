@@ -13,6 +13,7 @@ curl -X POST -u "apikey:QiI8P29bXrlsif3kLkFmIByvFzuVTIRtIkt4P2-WBzIl" \
 
 pipenv shell 
 
+pipenv install -r requirement.txt
 python -m ipykernel install --user --name=Phython
 
 jupyter notebook --NotebookApp.allow_origin=\'$(gp url 8888)\'
